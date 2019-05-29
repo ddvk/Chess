@@ -1,4 +1,4 @@
-import QtQuick 2.4
+import QtQuick 2.0
 
 import "Constants.js" as Constants
 
@@ -75,15 +75,6 @@ Item {
                         + (index % Constants.BOARD_SIZE)) % 2
                             ? Constants.CELL_DARK_COLOR : Constants.CELL_LIGHT_COLOR
 
-                    states: [
-                        State {
-                            when: dropArea.containsDrag
-                            PropertyChanges {
-                                target: cell
-                                color: "grey"
-                            }
-                        }
-                    ]
 
                 }
             }

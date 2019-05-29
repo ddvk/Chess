@@ -1,3 +1,4 @@
+QT += quick
 TEMPLATE = subdirs
 CONFIG  += ordered
 
